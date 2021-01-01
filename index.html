@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
 
     <!-- main css -->
+    <link rel="stylesheet" rel="preload" href="css/styles.css" />
     <link rel="stylesheet" rel="preload" href="css/style.css" />
 </head>
 
@@ -61,12 +62,12 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#projects">Projects</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#blogs">Blogs</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#achievements">Achievements</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#newsletter">Newsletter</a>
                             </li>
@@ -98,7 +99,7 @@
                             <div class="d-flex align-items-center">
                                 <a class="primary_btn" href="mailto:vinayak.savle@gmail.com"><span>Hire
                                         Me</span></a>
-                                <a class="primary_btn tr-bg" href="img/resume/Resume_png.png"><span>View
+                                <a target="_blank" class="primary_btn tr-bg" href="img/resume/Resume_png.png"><span>View
                                         Resume</span></a>
                             </div>
                         </div>
@@ -140,7 +141,7 @@
                             I always feel if you are willing to do more than you are paid to
                             do, eventually you will be paid to do more than you do.
                         </p>
-                        <a class="primary_btn" href="img/resume/Resume_pdf.pdf" download><span>Download
+                        <a target="_blank" class="primary_btn" href="img/resume/Resume_pdf.pdf" download><span>Download
                                 Resume</span></a>
                     </div>
                 </div>
@@ -251,8 +252,84 @@
     <!--================ Ends Skills Area =================-->
 
     <!--================ Start Projects Area =================-->
+    <section class="work section" id="projects">
+        <div class="main_title text-center">
+            <h1>My Projects</h1>
+        </div>
+        <div class="work__container bd-grid">
+            <div class="work__img">
+                <img src="img/projects/blogsite.PNG" alt="blogsite" />
 
-    <section class="portfolio_area section_gap" id="projects">
+                <div class="work__links">
+                    <h5 style="text-align: center;">
+                        <p style="padding: 5px; color: #57c84d;">Be a Blogger</p>
+                    </h5>
+                    <a class="work__live" target="_blank" href="https://blogsite-ad468.web.app/">Live</a>
+                    <a class="work__github" target="_blank" href="https://github.com/vinayaksavle/blogsite">Github</a>
+                </div>
+            </div>
+
+            <div class="work__img">
+                <img src="img/projects/netflix.JPG" alt="netflix" />
+
+                <div class="work__links">
+                    <h5 style="text-align: center;">
+                        <p style="padding: 5px; color: #57c84d;">Netflix Clone using Firebase Authentication</p>
+                    </h5>
+                    <a class="work__live" target="_blank" href="https://netflix-clone-88c67.web.app/">Live</a>
+                    <a class="work__github" target="_blank"
+                        href="https://github.com/vinayaksavle/netflix-clone">Github</a>
+                </div>
+            </div>
+
+            <div class="work__img">
+                <img src="img/projects/google-keep.PNG" alt="google-keep" />
+
+                <div class="work__links">
+                    <h5 style="text-align: center;">
+                        <p style="padding: 5px; color: #57c84d;">Google Keep Clone</p>
+                    </h5>
+                    <a class="work__live" target="_blank"
+                        href="https://vinayaksavle.github.io/google-keep-clone/">Live</a>
+                    <a class="work__github" target="_blank"
+                        href="https://github.com/vinayaksavle/google-keep-clone">Github</a>
+                </div>
+            </div>
+
+            <div class="work__img">
+                <img src="img/projects/service.PNG" alt="service" />
+
+                <div class="work__links">
+                    <h5 style="text-align: center;">
+                        <p style="padding: 5px; color: #57c84d;">Website for Services</p>
+                    </h5>
+                    <a class="work__live" target="_blank" href="https://codewithvvs.netlify.app/">Live</a>
+                    <a class="work__github" target="_blank"
+                        href="https://github.com/vinayaksavle/Simple-Website-for-Services">Github</a>
+                </div>
+            </div>
+
+            <div class="work__img">
+                <img src="img/projects/recipe.PNG" alt="recipe" />
+
+                <div class="work__links">
+                    <h5 style="text-align: center;">
+                        <p style="padding: 5px; color: #57c84d;">Recipe Book using Angular</p>
+                    </h5>
+                    <a class="work__live" target="_blank"
+                        href="https://vinayaksavle.github.io/FoodOrderAngular/recipes">Live</a>
+                    <a class="work__github" target="_blank"
+                        href="https://github.com/vinayaksavle/FoodOrderAngular">Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Projects Area =================-->
+
+
+    <!--================ Start Projects Area =================-->
+
+    <!-- <section class="portfolio_area section_gap" id="projects">
         <div class="container">
             <div class="main_title text-center">
                 <h1>My Projects</h1>
@@ -331,7 +408,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
     <!--================ End Projects Area =================-->
 
     <!--================ Start Newsletter Area =================-->
@@ -386,7 +463,7 @@
                 <div class="col-lg-12">
                     <div class="footer_top flex-column">
                         <div class="footer_logo">
-                            <img src="img/dp.png" style="height: 300px; width: 300px; border-radius: 50%"
+                            <img class="footer_img" src="img/dp.png" style="height: 300px; width: 300px; border-radius: 50%"
                                 alt="vvs_dp" />
                             <p style="font-family: Arial, Helvetica, sans-serif;margin-top: 30px;font-size: x-large;">
                                 Say Hi to me! 👋
@@ -394,23 +471,23 @@
                         </div>
                         <div class="footer_social">
                             <label hidden>mail</label>
-                            <a href="mailto:vinayak.savle@gmail.com">
+                            <a target="_blank" href="mailto:vinayak.savle@gmail.com">
                                 <i class="fa fa-envelope-o" alt="mail"></i>
                             </a>
                             <label hidden>instagram</label>
-                            <a href="https://www.instagram.com/vinayak_savle/">
+                            <a target="_blank" href="https://www.instagram.com/vinayak_savle/">
                                 <i class="fa fa-instagram" alt="instagram"></i>
                             </a>
                             <label hidden>twitter</label>
-                            <a href="https://twitter.com/mera_naam_vvs">
+                            <a target="_blank" href="https://twitter.com/mera_naam_vvs">
                                 <i class="fa fa-twitter" alt="twitter"></i>
                             </a>
                             <label hidden>github</label>
-                            <a href="https://github.com/vinayaksavle">
+                            <a target="_blank" href="https://github.com/vinayaksavle">
                                 <i class="fa fa-github" alt="github"></i>
                             </a>
                             <label hidden>linkedin</label>
-                            <a href="https://www.linkedin.com/in/vinayak-savle-360a5280/">
+                            <a target="_blank" href="https://www.linkedin.com/in/vinayak-savle-360a5280/">
                                 <i class="fa fa-linkedin" alt="linkedin"></i>
                             </a>
                         </div>
@@ -418,14 +495,11 @@
                 </div>
             </div>
             <div class="row footer_bottom justify-content-center">
-                <p class="col-lg-8 col-sm-12 footer_text">&copy; 2020 VVSCODES</p>
+                <p class="col-lg-8 col-sm-12 footer_text">&copy; 2021 VVSCODES</p>
             </div>
         </div>
     </footer>
     <!--================End Footer Area =================-->
-
-
-
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
